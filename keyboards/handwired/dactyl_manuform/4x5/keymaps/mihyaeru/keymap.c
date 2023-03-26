@@ -115,3 +115,10 @@ void persistent_default_layer_set(uint16_t default_layer) {
     eeconfig_update_default_layer(default_layer);
     default_layer_set(default_layer);
 }
+
+/* debug */
+/* void keyboard_post_init_user(void) { */
+/*   debug_enable = true; */
+/*   debug_matrix = true; */
+/*   debug_mouse  = true; */
+/* } */
