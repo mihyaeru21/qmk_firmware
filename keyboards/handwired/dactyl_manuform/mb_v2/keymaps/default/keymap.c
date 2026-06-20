@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           KC_MINS,  KC_EQL,                                        KC_LBRC, KC_RBRC,
                                             KC_LSFT, KC_LCTL,              KC_SPC,
                                               RAISE, KC_LALT,               LOWER,
-                                              LOWER, KC_LGUI,      RAISE, T_RAISE
+                                            KC_LALT, KC_LGUI,    KC_RALT, T_RAISE
     ),
 
     [_LOWER] = LAYOUT(
@@ -35,17 +35,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           _______, _______,                                        _______, _______,
                                             _______, _______,             _______,
                                                FUNC, _______,             _______,
-                                            _______, _______,       FUNC, _______
+                                            _______, _______,    _______, _______
     ),
 
     [_RAISE] = LAYOUT(
-        _______, _______, _______,   KC_UP, _______, KC_PGUP,    _______, _______, _______, _______, _______, KC_PSCR,
+        _______, _______, KC_PGUP,   KC_UP, KC_PGDN, _______,     KC_DEL, _______, _______, _______, _______, KC_PSCR,
         _______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT,  KC_END,    KC_BSPC,  KC_MB1,  KC_MB3,  KC_MB2,  KC_ESC, _______,
-        _______, _______, _______, _______, _______, KC_PGDN,    _______, _______, QK_USER, _______,  KC_ENT, _______,
+        _______, _______, _______, _______, _______, _______,    _______, _______, QK_USER, _______,  KC_ENT, _______,
                           _______, _______,                                         KC_MB4,  KC_MB5,
                                             _______, _______,             _______,
                                             _______, _______,                FUNC,
-                                               FUNC, _______,    _______, _______
+                                            _______, _______,    _______, _______
     ),
 
     [_FUNC] = LAYOUT(
